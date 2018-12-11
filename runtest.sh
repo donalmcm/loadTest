@@ -20,11 +20,11 @@ do
 	# result is stored in variable idle
 	idle=`mpstat 10 1 | awk 'END{print $12}'`
 	
-	# count the number of completed processes - storing number in variable Co
-	Co=`wc -l < synthetic.dat`	
-
 	# killing the loadtest which is running in the background
 	pkill loadtest
+	
+	# count the number of completed processes - storing number in variable Co
+	Co=`wc -l < synthetic.dat`	
 	
 	echo -e "$Co\t$n\t$idle" >> results.dat # appending results from tests ran to data file
 	
