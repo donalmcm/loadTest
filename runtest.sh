@@ -9,6 +9,7 @@ echo -e "Co\tN\tidle" > results.dat
 echo "============================="
 echo "    LOAD TESTING STARTED     "
 echo "============================="
+
 # n being the number of cocurrent users (also being used as the indexer)
 for n in {1..50} # loop 1 to 50 
 do
