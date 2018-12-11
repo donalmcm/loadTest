@@ -10,7 +10,7 @@ echo "============================="
 echo "    LOAD TESTING STARTED     "
 echo "============================="
 
-# n being the number of cocurrent users (also being used as the indexer)
+# n being the number of concurrent users (also being used as the indexer)
 for n in {1..50} # loop 1 to 50 
 do
 	# running loadtest script in background using & 
